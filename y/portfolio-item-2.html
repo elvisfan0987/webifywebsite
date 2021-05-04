@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Webify</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script>
+        $(function(){ 
+            $("#header").load("header.html");  
+            $("#footer").load("footer.html");  
+          }); 
+        </script>
+    </head>
+    <body>
+    <div id="header"></div>
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Rock Paper Scissors</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A web application that allows users to play rock paper scissors</p>
+            <img src="img/sn-rockpaper.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>This project is developed by Javascript, HTML and CSS which is hosted on Firebase</p>
+            <img src="img/RPSdemo.png" alt="">
+            <p>The below link will forward you to the web application</p>
+            <a href="https://rock-paper-scissors-9a30e.web.app/">Rock Paper Scissor Application</a>
+            <p></p>
+        </div>
+        
+        <div id="footer"></div>
+        
+    </body>
+</html>

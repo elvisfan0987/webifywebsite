@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Webify</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script>
+        $(function(){ 
+            $("#header").load("header.html");  
+            $("#footer").load("footer.html");  
+          }); 
+        </script>
+    </head>
+    <body>
+
+    <div id="header"></div>
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, We are <strong>Webify</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Website Designers</p>
+            <img src="" alt="a picture of Elvis rowing" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What We Do</h2>
+            <div class="services">
+                <!-- / service -->
+                <div class="service">
+                    <h3>Web Design + Development</h3>
+                    <p>HTML CSS Javascript</p>
+                </div> 
+                <!-- / service -->
+                <div class="service">
+                    <h3>Logo Design</h3>
+                    <p>Photoshop</p>    
+                </div> 
+                <!-- / service -->
+                <div class="service">
+                    <h3>Software Tester</h3>
+                    <p>Jemeter</p>
+                    <p>Junit</p>
+                </div> 
+            </div> <!-- / services -->
+            <a href="#work" class="btn">Our Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who We are</h2>
+           <p class="section__subtitle section__subtitle--about">Designers and Developers from HKUST</p>
+           
+           <div class="about-me__body">
+               <p>The founders are graduated from the Business and Engineering school of HKUST in 2019</p>
+               <p>We have years of experience in web application development</p>
+            </div>
+           
+           <img src="" alt="Elvis" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="our-work" id="work">
+            <h2 class="section__title">Our work</h2>
+            <p class="section__subtitle">A Selection of Our Work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="/portfolio-item.html" class="portfolio__item">
+                    <img src="img/CoronaVirus.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="/portfolio-item-2.html" class="portfolio__item">
+                    <img src="img/sn-rockpaper.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+        
+        <div id="footer"></div>
+        
+    </body>
+</html>
