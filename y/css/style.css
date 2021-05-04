@@ -5,7 +5,7 @@
 }
 
 /* Custom Properties, update these for your own design */
-
+/* It represents the root of the document which is the <html> */
 :root {
   --ff-primary: "Source Sans Pro", sans-serif;
   --ff-secondary: "Source Code Pro", monospace;
@@ -55,6 +55,7 @@ section {
 }
 
 img {
+  /* display:block means the element will start on a new line and takes up the whole width */
   display: block;
   max-width: 100%;
 }
@@ -80,16 +81,17 @@ strong {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
+  /* ease-in-out slow start and end */
   transition: transform 200ms ease-in-out;
   font-size: 1rem;
 }
 
 .btn:hover {
+  /*  The button will enlarge by 1.1 */
   transform: scale(1.1);
 }
 
 /* Typography */
-
 h1,
 h2,
 h3 {
